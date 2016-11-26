@@ -1,0 +1,26 @@
+<div class="row">
+    <div>
+
+        <div class="col-md-6">
+            <!--Loading indicator, to simulate 1500ms delay. Credits: https://codepen.io/MattIn4D/pen/LiKFC-->
+            <div class="loading"
+                 *ngIf="!currentCity">Loading&#8230;
+            </div>
+            <h2>Edit city: {{ currentCity?.name }}</h2>
+
+            <!--Form values filled in after simulated delay in service-->
+            <form action="" [formGroup]="cityForm">
+                <input type="text" class="input-lg" formControlName="name" placeholder="Name"><br>
+                <input type="text" class="input-lg" formControlName="province" placeholder="Province"><br>
+                <input type="text" class="input-lg" formControlName="highlights" placeholder="Highlights"><br>
+                <a class="btn btn-default" (click)="cancel()">Cancel</a>
+                <a class="btn btn-success" (click)="updateCity()">Update</a>
+            </form>
+        </div>
+    </div>
+    <div class="col-md-6" *ngIf="currentCity">
+        <img src="img/{{ currentCity.name}}.jpg"
+             alt="Picture of {{ currentCity.name }}"
+             class="img-responsive"/>
+    </div>
+</div>
