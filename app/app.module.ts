@@ -15,6 +15,7 @@ import {CityService} from "./shared/services/city.service";
 import {MainComponent}  from './MainComponent';
 import {AppComponent}  from './home/app.component';
 import {CityEditComponent}  from './edit/city.edit.component';
+import {CityAddComponent} from './add/city.add.component';
 
 // Module
 @NgModule({
@@ -27,7 +28,8 @@ import {CityEditComponent}  from './edit/city.edit.component';
 	declarations: [
 		MainComponent,
 		AppComponent,
-		CityEditComponent
+		CityEditComponent,
+		CityAddComponent
 	],
 	providers   : [CityService],
 	bootstrap   : [MainComponent]

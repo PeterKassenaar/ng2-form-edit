@@ -1,0 +1,17 @@
+<div class="row">
+    <div>
+
+        <div class="col-md-6">
+            <h2>Add city</h2>
+
+            <!--Form values filled in after simulated delay in service-->
+            <form action="" [formGroup]="cityForm">
+                <input type="text" class="input-lg" formControlName="name" placeholder="Name"><br>
+                <input type="text" class="input-lg" formControlName="province" placeholder="Province"><br>
+                <input type="text" class="input-lg" formControlName="highlights" placeholder="Highlights"><br>
+                <a class="btn btn-default" (click)="cancel()">Cancel</a>
+                <a class="btn btn-success" (click)="addCity()">Update</a>
+            </form>
+        </div>
+    </div>
+</div>

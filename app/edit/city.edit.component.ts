@@ -7,6 +7,7 @@ import {ActivatedRoute, Router} from '@angular/router';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/switchMap';
 import 'rxjs/add/operator/delay';
+import {cityFormModel} from '../shared/model/city.form.model';
 
 @Component({
     moduleId   : module.id,
@@ -30,11 +31,7 @@ export class CityEditComponent implements OnInit, OnDestroy {
 
     ngOnInit() {
         // 1. build our form
-        this.cityForm = this.formBuilder.group({
-            name      : '',
-            province  : '',
-            highlights: ''
-        });
+        this.cityForm = this.formBuilder.group(cityFormModel);
         // 2. get current city, based on ID in querystring, simulate a delay of 1500ms
         this.sub = this.route.params
             .delay(1500)
