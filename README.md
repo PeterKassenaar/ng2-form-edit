@@ -1,6 +1,7 @@
 # ng2-form-edit
 Example of how to edit data in Angular 2 Reactive Forms, while the form values are retrieved asynchronously, based on an ID on the query string.
 
+It is still an "old" application (using SystemJS and RxJS 5.0beta, not modern CLI), but you can easily adapt the code to a newer form of application.
 ##usage
 - clone repository
 - run `npm install` or `yarn install` plus `typings install`
