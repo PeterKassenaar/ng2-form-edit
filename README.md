@@ -1,19 +1,27 @@
-# ng2-form-edit
-Example of how to edit data in Angular 2 Reactive Forms, while the form values are retrieved asynchronously, based on an ID on the query string.
+# NgxFormEdit
 
-> It is still an "old" application (using SystemJS and RxJS 5.0beta, not modern CLI), but you can easily adapt the code to a newer form of application.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.6.
 
+## Development server
 
-##usage
-- clone repository
-- run `npm install` or `yarn install` plus `typings install`
-- run `npm start`
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-##structure
-- The app has two components: a list of cities (`\app\home\app.component.ts`), an Edit component (`\app\edit\city.edit.component.ts`) and the basic Angular 2-files like a bootstrapper, module, routing, etc.
-- The data is in `app\data\cities.json`
-- The Edit component has a reactive form, in which the chosen city is loaded after a simulated delay of 1500ms.
-- Study the code in `city.edit.component.ts` and `city.service.ts` to see how the data is fetched and edited.
-- The edited data is not really saved back to the .json file. The Save button is just there for demonstration purposes.
+## Code scaffolding
 
-Questions? Mail me at info@kassenaar.com
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
